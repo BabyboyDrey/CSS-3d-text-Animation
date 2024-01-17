@@ -1,0 +1,26 @@
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.banner {
+  display: flex;
+}
+
+.panel {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.panel::before {
+  content: "Hello world";
+  position: absolute;
+  font-size: 100px;
+  width: max-content;
+}
